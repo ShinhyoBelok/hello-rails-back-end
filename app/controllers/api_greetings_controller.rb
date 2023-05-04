@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApiGreetingsController < ApplicationController
   def random
     @greeting = Greeting.order('RANDOM()').pluck(:message).first
